@@ -1,6 +1,7 @@
-package com.company.modules;
+package com.company.services;
 
-import com.company.services.CredentialService;
+import com.company.model.Employee;
+
 import java.util.Scanner;
 
 public class CredentialApplication {
@@ -49,7 +50,7 @@ public class CredentialApplication {
 
         //Generate email, password and show the same
         System.out.println();//
-        CredentialService service = new CredentialService(employee.firstName, employee.lastName, department);
+        CredentialService service = new CredentialService(employee.getFirstName(), employee.getLastName(), department);
         service.generateEmailAddress();
         service.generatePassword();
         service.showCredential();

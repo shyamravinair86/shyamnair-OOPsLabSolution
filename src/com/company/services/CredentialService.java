@@ -11,7 +11,6 @@ public class CredentialService {
     private String userEmail;
     private String userPassword;
 
-
     public CredentialService(String firstName, String lastName, String department) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -48,4 +47,5 @@ public class CredentialService {
         System.out.println("Email --> " + userEmail);
         System.out.println("Password --> " + userPassword);
     }
+
 }
